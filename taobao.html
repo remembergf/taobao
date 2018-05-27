@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>原生js创建淘宝购物车demo</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="taobao.css">
+	<script type="text/javascript" src="taobao.js"></script>
+</head>
+<body>
+	<div class="head">
+		<div class="head-log">
+			<img src="img/6.jpg" class="head-log1">
+		</div>
+		<div class="head-search">
+			<p class="head-search-p1"><a href="#">宝贝</a></p>
+			<ul class="head-search-ul">
+				<li class="head-search-li"><a href="#">天猫</a></li>
+				<li class="head-search-li" style="border-bottom: 2px solid red"><a href="#">店铺</a></li>
+			</ul>
+		</div>
+		<div>
+			<p class="head-search-p2"><a href="#">搜&nbsp;&nbsp;索</a></p>
+		</div>
+
+	</div>
+	<table id="createTable">
+		<thead class="head1">
+			<tr class="head-row">
+				<th>
+					<input type="checkbox" class="check_all"><span>&nbsp;全选</span>
+				</th>
+				<th>商品信息</th>
+				<th>单价</th>
+				<th>数量</th>
+				<th>金额</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody class="body">
+			<tr class="body-1">
+				<td class="check">
+					<input type="checkbox">
+				</td>
+				<td class="goods">
+					<img src="img/1.jpg" class="body-1-img">
+					<p class="body-1-p1">现货 耐克Nike Roshe Run One黑白<br/>跑鞋 844994-002 511881-010</p>
+				</td>
+				<td class="price">
+					<span class="body-1-price" >
+						<s>499.00RMB</s><br/>
+						<b>388.00RMB</b>
+					</span>
+				</td>
+				<td class="count">
+					<span class="body-1-reduce">-</span>
+					<input type="text" value="1" class="body-1-text" style="width: 50px; height: 21px;">
+					<span class="body-1-add" style="margin-left: -5px;">+</span>
+				</td>
+				<td class="subTotle">
+					<span class="sum"><b>338.00RMB</b></span>
+				</td>
+				<td class="operation">
+					<span class="body-1-p2"><a href="#" class="body-1-p5" class="body-1-p5">移入收藏夹</a><br></span>
+					<span class="body-1-p3" class="delete"><a href="#" class="body-1-p5">删除</a><br></span>
+					<span class="body-1-p4"><a href="#" class="body-1-p5">相似宝贝</a><br></span>
+				</td>
+			</tr>
+
+			<tr class="body-2">
+				<td class="check">
+					<input type="checkbox">
+				</td>
+				<td class="goods">
+					<img src="img/2.jpg" class="body-1-img">
+					<p class="body-1-p1">
+						阿迪达斯休闲收口小脚裤运动裤<br>BK6917 8011 AY9876 BR7764 AK1566</p>
+				</td>
+				<td class="price">
+					<span class="body-1-price" >
+						<s>279.00RMB</s><br/>
+						<b>179.00RMB</b>
+					</span>
+				</td>
+				<td class="count">
+					<span class="body-1-reduce">-</span>
+					<input type="text" value="1" class="body-1-text" style="width: 50px; height: 21px;">
+					<span class="body-1-add" style="margin-left: -5px;">+</span>
+				</td>
+				<td class="subTotle">
+					<span class="sum"><b>179.00RMB</b></span>
+				</td>
+				<td class="operation">
+					<span class="body-1-p2"><a href="#" class="body-1-p5" class="body-1-p5" class="body-1-p5">移入收藏夹</a><br></span>
+					<span class="body-1-p3" class="delete"><a href="#" class="body-1-p5" class="body-1-p5">删除</a><br></span>
+					<span class="body-1-p4"><a href="#" class="body-1-p5">相似宝贝</a><br></span>
+				</td>
+			</tr>
+
+			<tr class="body-3">
+				<td class="check">
+					<input type="checkbox">
+				</td>
+				<td class="goods">
+					<img src="img/3.jpg" class="body-1-img">
+					<p class="body-1-p1">三叶草阿迪达斯 Adidas superstar <br>C77124金标贝壳头男女小白板鞋
+					</p>
+				</td>
+				<td class="price">
+					<span class="body-1-price" >
+						<s>719.00RMB</s><br/>
+						<b>529.00RMB</b>
+					</span>
+				</td>
+				<td class="count">
+					<span class="body-1-reduce">-</span>
+					<input type="text" value="1" class="body-1-text" style="width: 50px; height: 21px;">
+					<span class="body-1-add" style="margin-left: -5px;">+</span>
+				</td>
+				<td class="subTotle">
+					<span class="sum"><b>529.00RMB</b></span>
+				</td>
+				<td class="operation">
+					<span class="body-1-p2"><a href="#" class="body-1-p5" class="body-1-p5" class="body-1-p5">移入收藏夹</a><br></span>
+					<span class="body-1-p3"  class="delete"><a href="#" class="body-1-p5" class="body-1-p5">删除</a><br></span>
+					<span class="body-1-p4"><a href="#" class="body-1-p5">相似宝贝</a><br></span>
+				</td>
+			</tr>
+
+			<tr class="body-4">
+				<td class="check">
+					<input type="checkbox">
+				</td>
+				<td class="goods">
+					<img src="img/4.jpg" class="body-1-img">
+					<p class="body-1-p1">大学生寝室宿舍墙纸装扮<br>贴画 可移除创意装饰装修自粘壁纸贴纸
+					</p>
+				</td>
+				<td class="price">
+					<span class="body-1-price" >
+						<s>35.00RMB</s><br/>
+						<b>21.90RMB</b>
+					</span>
+				</td>
+				<td class="count">
+					<span class="body-1-reduce">-</span>
+					<input type="text" value="1" class="body-1-text" style="width: 50px; height: 21px;">
+					<span class="body-1-add" style="margin-left: -5px;">+</span>
+				</td>
+				<td class="subTotle">
+					<span class="sum"><b>21.90RMB</b></span>
+				</td>
+				<td class="operation">
+					<span class="body-1-p2"><a href="#"  class="body-1-p5"  class="body-1-p5">移入收藏夹</a><br></span>
+					<span class="body-1-p3" class="delete"><a href="#"  class="body-1-p5">删除</a><br></span>
+					<span class="body-1-p4"><a href="#" class="body-1-p5">相似宝贝</a><br></span>
+				</td>
+			</tr>
+
+			<tr class="body-5">
+				<td class="check">
+					<input type="checkbox">
+				</td>
+				<td class="goods">
+					<img src="img/5.jpg" class="body-1-img">
+					<p class="body-1-p1">Nike Kwazi Action回到未来<br>简版小椰子透气男鞋休闲跑步鞋 844839
+					</p>
+				</td>
+				<td class="price">
+					<span class="body-1-price" >
+						<!-- <s>499.00RMB</s><br/> -->
+						<b>569.00RMB</b>
+					</span>
+				</td>
+				<td class="count">
+					<span class="body-1-reduce">-</span>
+					<input type="text" value="1" class="body-1-text" style="width: 50px; height: 21px;">
+					<span class="body-1-add" style="margin-left: -5px;">+</span>
+				</td>
+				<td class="subTotle">
+					<span class="sum"><b>569.00RMB</b></span>
+				</td>
+				<td class="operation">
+					<span class="body-1-p2"><a href="#" class="body-1-p5">移入收藏夹</a><br></span>
+					<span class="body-1-p3" class="delete"><a href="#" class="body-1-p5">删除</a><br></span>
+					<span class="body-1-p4"><a href="#" class="body-1-p5">相似宝贝</a><br></span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- 页脚的部分 -->
+	<div class="footer">
+		<div class="footer-left">
+			<input type="checkbox" class="check_all"><span>&nbsp;<b>全选</b></span>
+			<span class="footer-p1" id="deleteAll"><a href="#" class="footer-p5">删除</a></span>
+			<span class="footer-p2"><a href="#" class="footer-p5">移入收藏夹</a></span>
+			<span class="footer-p3"><a href="#" class="footer-p5">分享</a></span>
+		</div>
+		<div class="footer-right" id="footer-selected">
+			<span id="footer-p6">已选商品:</span>
+			<span>
+				<span style="color: red; font-size: 18px;" id="footer-selectTotle"><b>0</b></span>
+				<span style="font-size: 15px; color: gray;">件</span>
+			</span>
+			<span style="font-size: 15px; color: gray; margin-left: 10px;">
+				合计:
+				<span id="footer-priceTotle"><b>0.00</b></span>
+				&nbsp;&nbsp;RMB
+			</span>
+			<span class="footer-p4"><a href="#" class="footer-p5">结&nbsp;&nbsp;算</a></span>
+		</div>
+	</div>
+</body>
+</html>
